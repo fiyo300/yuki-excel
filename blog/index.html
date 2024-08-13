@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
     <meta charset='utf-8'>
-    <title>ログインページ</title>
+    <title>東大生が教える理科の基礎</title>
     <script>function getlevel(){
-        if(document.getElementById('excel').value == "20221202"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('excel').value == "2009"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('excel').value);
@@ -17,7 +17,7 @@
     }
 </style>
 
-    ログインしてください<br>
+    ログインしてください（2009）<br>
     ログインしないと次のステップに進めません<br>
     <input id="excel" type="text"></input><input type="button" onClick="getlevel()">確認</input>
     <div id="info">
